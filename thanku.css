@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7f0; /* nền sáng pha cam */
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+h1 {
+    color: #f37021; /* màu cam FPT */
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f37021; /* màu cam FPT */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #d95f1b; /* cam đậm hơn */
+    transition: background-color 0.3s ease;
+}
+
+.back-button:not(:hover) {
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}

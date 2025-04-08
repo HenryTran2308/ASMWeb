@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hoidap.css">
+    <title>FQA</title>
+</head>
+
+
+
+<body>
+
+    <div class="container">
+        <h1>Câu Hỏi Thường Gặp</h1>
+
+        <div class="item">
+            <h3>Câu hỏi 1: Làm sao để có thể xem được thời khóa biểu dành cho sinh viên?</h3>
+            <p>Đầu tiên sinh viên phải truy cập trang ap.poly.edu.vn của trường, sau đó đăng nhập tài khoản gmail của,
+                cuối cùng bạn vào phần lịch học.</p>
+        </div>
+
+        <div class="item">
+            <h3>Câu hỏi 2: Làm sao để nộp được bài trên trang web lms?</h3>
+            <p>Hãy đăng nhập tài khoản gmail vào trang web lms sau đó chọn vào môn học sinh viên muốn nộp bài và bấm vào
+                thư mục của bài tập, sau cùng chọn file của bài tập. <br> <strong>(Lưu ý: file bài tập phải nhỏ hơn
+                    2KB).</strong></p>
+        </div>
+
+        <div class="item">
+            <h3>Câu hỏi 3: Làm sao để khôi phục điểm danh?</h3>
+            <p>Sinh viên truy cập vào trang ap của trường và vào phần dịch vụ trực tuyến sau đó bạn chọn đăng ký dịch
+                vụ. Tiếp theo chọn đăng ký khôi phục điểm danh và làm theo hướng dẫn.
+                <br><strong>(Lưu ý: Sinh viên chỉ được đăng ký 1 lần/ môn/ kỳ trong vòng 2 ngày kể từ khi không được
+                    điểm danh).</strong>
+            </p>
+        </div>
+    </div>
+
+
+    <script>
+        const faqItems = document.querySelectorAll('.item h3');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="thuvien.css">
+  <title>Thuvien</title>
+</head>
+
+<body>
+
+  <h1>Thư Viện FPT</h1>
+
+  <div class="section">
+    <h2>📚 Tài liệu học tập</h2>
+    <ul>
+      <li><a href="https://drive.google.com/drive/folders/1AdjvUhtUWsCEaprN6tsMc9SOeb6wtj8i" target="_blank">Bài giảng
+          lập trình web</a></li>
+      <li><a href="https://drive.google.com/drive/folders/1Eh8dPAdzPhR-u4TCWmHooCsVSIInn03R" target="_blank">Bài giảng
+          java 2</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🖼️ Hình ảnh sự kiện</h2>
+    <div class="gallery">
+      <img src="hinh/genai.jpg" alt="Sự kiện 1" onclick="openModal(this)">
+      <img src="hinh/tonvinh.jpg" alt="Sự kiện 2" onclick="openModal(this)">
+      <img src="hinh/tonvinh1.jpg" alt="Sự kiện 3" onclick="openModal(this)">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🎥 Video giới thiệu</h2>
+    <iframe <iframe width="560" height="315" src="https://www.youtube.com/embed/Ng5ANgan4GE?si=UJ07kZyDrvAEezjN"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+  </div>
+
+
+  <div id="imgModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+
+  <script>
+    function openModal(imgElement) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+      modal.style.display = "flex";
+      modalImg.src = imgElement.src;
+    }
+
+    function closeModal() {
+      document.getElementById("imgModal").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

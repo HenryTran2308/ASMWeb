@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment</title>
+
+</head>
+
+<body>
+
+    <section id="gioithieu" onclick="goToLink('gioithieu.html')">
+        <h2>Giới Thiệu</h2>
+        <p>Thông tin về trường, lịch sử hình thành và phát triển.</p>
+    </section>
+
+    <section id="lienhe">
+        <h2>Liên hệ</h2>
+        <p>Thông tin liên hệ của nhà trường.</p>
+        <ul class="submenu">
+            <li><a href="sodotochuc.html">Sơ Đồ Tổ Chức</a></li>
+            <li><a href="thuvien.html">Thư Viện</a></li>
+        </ul>
+    </section>
+
+    <section id="gopy" onclick="goToLink('gopy.html')">
+        <h2>Góp ý</h2>
+        <p>Chúng tôi luôn hoan nghênh mọi góp ý từ bạn.</p>
+    </section>
+
+    <section id="hoidap" onclick="goToLink('hoidap.html')">
+        <h2>Hỏi & Đáp</h2>
+        <p>Những câu hỏi thường gặp từ học sinh và phụ huynh.</p>
+    </section>
+    <script>
+        function goToLink(url) {
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+
+</html>
